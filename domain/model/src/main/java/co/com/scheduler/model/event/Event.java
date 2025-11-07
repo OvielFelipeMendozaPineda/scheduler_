@@ -1,5 +1,7 @@
 package co.com.scheduler.model.event;
 
+import co.com.scheduler.model.dancer.Dancer;
+
 import java.time.LocalDate;
 import java.util.List;
 import java.util.UUID;

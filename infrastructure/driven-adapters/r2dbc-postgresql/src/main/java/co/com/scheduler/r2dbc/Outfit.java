@@ -1,22 +1,25 @@
-package co.com.scheduler.model.outfit;
+package co.com.scheduler.r2dbc;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Table;
 
 import java.util.UUID;
 
+@Table(name = "outfit")
 public class Outfit {
-    
+    @Id
     private UUID id;
     private String name;
 
     public Outfit() {}
 
-    public UUID getId() {
-        return id;
-    }
-
     public Outfit(UUID id, String name) {
         this.id = id;
         this.name = name;
+    }
+
+    public UUID getId() {
+        return id;
     }
 
     public void setId(UUID id) {
