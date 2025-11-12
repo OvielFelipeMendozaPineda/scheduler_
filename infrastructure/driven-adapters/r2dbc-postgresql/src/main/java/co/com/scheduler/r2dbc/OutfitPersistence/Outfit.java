@@ -1,4 +1,4 @@
-package co.com.scheduler.r2dbc;
+package co.com.scheduler.r2dbc.OutfitPersistence;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Table;

@@ -1,6 +1,7 @@
 package co.com.scheduler.api;
 
-import co.com.scheduler.api.OutfitController.RouterRest;
+import co.com.scheduler.api.OutfitReactiveController.OutfitHandler;
+import co.com.scheduler.api.OutfitReactiveController.OutfitRouterRest;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,9 +10,9 @@ import org.springframework.http.MediaType;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.web.reactive.server.WebTestClient;
 
-@ContextConfiguration(classes = {RouterRest.class, Handler.class})
+@ContextConfiguration(classes = {OutfitRouterRest.class, OutfitHandler.class})
 @WebFluxTest
-class RouterRestTest {
+class OutfitRouterRestTest {
 
     @Autowired
     private WebTestClient webTestClient;

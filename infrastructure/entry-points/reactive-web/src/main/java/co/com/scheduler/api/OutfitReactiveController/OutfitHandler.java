@@ -1,18 +1,15 @@
-package co.com.scheduler.api.OutfitController;
+package co.com.scheduler.api.OutfitReactiveController;
 
 import co.com.scheduler.model.outfit.model.Outfit;
 import co.com.scheduler.usecase.outfitUseCases.CreateOutfitUseCase;
 import co.com.scheduler.usecase.outfitUseCases.DeleteOutfitUseCase;
 import co.com.scheduler.usecase.outfitUseCases.GetAllOutfitsUseCase;
 import co.com.scheduler.usecase.outfitUseCases.GetOutfitByIDUseCase;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.server.ServerRequest;
 import org.springframework.web.reactive.function.server.ServerResponse;
 import reactor.core.publisher.Mono;
 
-import java.time.Duration;
 import java.util.UUID;
 
 @Component

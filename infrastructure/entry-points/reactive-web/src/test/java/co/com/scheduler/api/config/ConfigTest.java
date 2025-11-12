@@ -1,7 +1,7 @@
 package co.com.scheduler.api.config;
 
-import co.com.scheduler.api.OutfitController.OutfitHandler;
-import co.com.scheduler.api.OutfitController.RouterRest;
+import co.com.scheduler.api.OutfitReactiveController.OutfitHandler;
+import co.com.scheduler.api.OutfitReactiveController.OutfitRouterRest;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.reactive.WebFluxTest;
@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Import;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.web.reactive.server.WebTestClient;
 
-@ContextConfiguration(classes = {RouterRest.class, OutfitHandler.class})
+@ContextConfiguration(classes = {OutfitRouterRest.class, OutfitHandler.class})
 @WebFluxTest
 @Import({CorsConfig.class, SecurityHeadersConfig.class})
 class ConfigTest {

@@ -1,4 +1,4 @@
-package co.com.scheduler.r2dbc;
+package co.com.scheduler.r2dbc.OutfitPersistence;
 
 import co.com.scheduler.model.outfit.gateways.OutfitRepository;
 import co.com.scheduler.r2dbc.helper.ReactiveAdapterOperations;
@@ -10,9 +10,9 @@ import reactor.core.publisher.Mono;
 import java.util.UUID;
 
 @Repository
-public class MyReactiveRepositoryAdapter extends ReactiveAdapterOperations<co.com.scheduler.model.outfit.model.Outfit, Outfit, UUID, MyReactiveRepository> implements OutfitRepository {
+public class OutfitReactiveRepositoryAdapter extends ReactiveAdapterOperations<co.com.scheduler.model.outfit.model.Outfit, Outfit, UUID, OutfitReactiveRepository> implements OutfitRepository {
 
-    public MyReactiveRepositoryAdapter(MyReactiveRepository repository, ObjectMapper mapper) {
+    public OutfitReactiveRepositoryAdapter(OutfitReactiveRepository repository, ObjectMapper mapper) {
         super(repository, mapper, d -> mapper.map(d, co.com.scheduler.model.outfit.model.Outfit.class));
     }
 
