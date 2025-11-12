@@ -30,7 +30,8 @@ public class MyReactiveRepositoryAdapter extends ReactiveAdapterOperations<co.co
 
     @Override
     public Flux<co.com.scheduler.model.outfit.model.Outfit> getAllOutfits() {
-        return null;
+        return repository.findAll()
+                .map(entity -> mapper.map(entity, co.com.scheduler.model.outfit.model.Outfit.class));
     }
 
     @Override

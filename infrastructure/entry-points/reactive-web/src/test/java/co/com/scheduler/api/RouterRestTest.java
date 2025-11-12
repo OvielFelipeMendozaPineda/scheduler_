@@ -1,5 +1,6 @@
 package co.com.scheduler.api;
 
+import co.com.scheduler.api.OutfitController.RouterRest;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
